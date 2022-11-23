@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+p{
+  font-size: 17px;
+  font-weight: 300;
+  font-family: Arial;
+
+}
+/* ================= la partie chattez avec nous ========================*/
+main{
+  height: 100%;
+  width: 100%;
+}
+.chat-bas{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 20px;
+  z-index: 10;
+}
+.row-1, .row1-div2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.row-1{
+  padding: 20px 0px;
+}
+.row1-div1{
+  height: 40px;
+  width: 210px;
+  border: 0.3px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 40px;
+}
+.row1-div1 .main{
+  width: 20px;
+}
+/*======================= l'effet sur le bouton ============================*/
+.row1-div2, .row1-div2-c{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  background: rgb(0,5,177) linear-gradient(180deg,rgb(4,55,190),rgb(0,16,215)) repeat-x;
+  margin-left: 10px;
+  box-shadow: rgb(0 77 255) 0px 2px 16px 0px;
+  color: white;
+  transition: transform .6s ease-in-out;
+}
+.row1-div2 i{
+  line-height: 50px;
+  font-size: 20px;
+  z-index: 3;
+}
+.row1-div2-c i{
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.row1-div2::before{
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.5);
+}
+.row1-div2:hover{
+  color: #6610f2;
+}
+.row1-div2:hover::before{
+  background: white;
+  transform: scale(2.2);
+}
+
+/*========================= la chat box ==============================*/
+.chat-box{
+  position: absolute;
+  bottom:  10px!important;
+  right: 70px;
+  width: 350px;
+  height: 620px;
+  border-radius: 2%;
+  border:  1px solid #6610f2 ;
+  overflow: hidden;
+  z-index: 5;
+  animation: deplacement 0.6s forwards;
+}
+@keyframes deplacement {
+  to{
+    right: 45px;
+  }
+
+}
+.bg-modifier{
+  background: rgb(0,16,215) linear-gradient(60deg,rgb(4,55,190),rgb(0,16,215)) repeat-x;
+}
+.avatar{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/3F21AE08-6BA8-4C9A-A48F-D364258F1CBE.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  box-shadow: rgb(0,0,0) 0px 3px 16px 0px;
+  transition: all 0.6s ease-in-out;
+}
+.avatar:hover{
+  transform: scale(1.1);
+}
+.btn-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  transition: all 0.4s ease-in-out;
+}
+.btn-top i{
+  line-height: 35px;
+}
+.btn-top:hover{
+  background: rgba(36, 0, 254,.5);
+  box-shadow: rgb(0,0,0) 0px 2px 16px 0px;
+
+}
+.text-petit{
+  font-size: 15px;
+}
+.img-courbe{
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  z-index: 100;
+}
+.text{
+  font-size: 16px;
+  font-weight: initial;
+  margin-left: 2px;
+}
+.fa-circle{
+  font-size: 8px;
+  margin-right: 3px;
+}
+.overflow{
+  height: 350px;
+  overflow-y: scroll;
+  scrollbar-color: #6610f2 transparent;
+  scrollbar-width: thin;
+}
+.overflow::-webkit-scrollbar {
+  width: 5px;
+}
+.overflow::-webkit-scrollbar-thumb {
+  background: #6610f2;
+  border-radius: 8px;
+}
+.overflow::-webkit-scrollbar-track {
+  background: transparent;
+}
+.texte-du-chat-gris,.texte-du-chat-blue{
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 13px;
+  margin: 0px 0px 3px 0px;
+  font-family: Arial;
+}
+.texte-du-chat-gris{
+  background: rgb(205,204,213);
+  color: black;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-self: start;
+}
+.texte-du-chat-blue{
+  background: #6610f2;
+  color: white;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-self: end;
+}
+.input{
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  color: rgba(205,204,213,1);
+}
+/*================================ trait de l'input saisissez =====================*/
+.trait{
+  position: absolute;
+  top: -5px;
+  left: 25px;
+  width: 299px;
+  height: 1px;
+  background: rgb(204,201,206);
+}
+.saisissez{
+  position: absolute;
+  left: 16px;
+  top: -6px;
+  width: 90%;
+  height: 50px;
+  padding: 10px 0px 10px 0px;
+  border: none;
+}
+.saisissez::placeholder{
+  color: rgb(146,143,148);
+  font-size: 18px;
+}
+.marge{
+  margin-top: 30px;
+  padding: 10px 10px 20px 10px;
+}
+
+.font{
+  font-size: 20px;
+  margin-left: 10px;
+}
+.font-1{
+  margin-left: -13px;
+  transform: rotate(140deg);
+}
+.favicon{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+.footer-text{
+  color: rgb(146,143,148);
+  font-size: 12px;
+}
+.richy{
+  color: black;
+  font-weight: bolder;
+}
+
+
