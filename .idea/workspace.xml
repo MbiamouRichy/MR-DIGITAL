@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="Mise en place du backend de la chatbox">
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/app/app.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ChatBox" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I0RZxS5slFyxJaO9zkh38fIYxy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/MBIAMOU RICHY/Documents/GitHub/MR-DIGITAL/chatbox/node_modules",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\MBIAMOU RICHY\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MBIAMOU RICHY\Documents\GitHub\MR-DIGITAL\chatbox\node_modules" />
+      <recent name="C:\Users\MBIAMOU RICHY\Documents\GitHub\MR-DIGITAL\chatbox\src\app" />
+      <recent name="C:\Users\MBIAMOU RICHY\Documents\GitHub\MR-DIGITAL\chatbox\node_modules\@angular" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ANGULAR CLI SERVER" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/chatbox/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="" />
+      <created>1669316573565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669316573565</updated>
+      <workItem from="1669316575575" duration="126000" />
+      <workItem from="1669316728462" duration="6943000" />
+      <workItem from="1669332668643" duration="4008000" />
+      <workItem from="1669377714517" duration="1705000" />
+      <workItem from="1669418564580" duration="3138000" />
+      <workItem from="1669508356359" duration="721000" />
+      <workItem from="1669640481881" duration="7068000" />
+      <workItem from="1669720898671" duration="4452000" />
+      <workItem from="1669893910508" duration="31000" />
+      <workItem from="1669894033207" duration="2380000" />
+    </task>
+    <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
+      <created>1669894866495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669894866495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Mise en place de la chatbox">
+      <created>1669894970019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669894970019</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Mise en place du backend de la chatbox">
+      <created>1669895137636</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669895137636</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mise en place des elements pour lachatbox" />
+    <MESSAGE value="Mise en place de la chatbox" />
+    <MESSAGE value="Mise en place du backend de la chatbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise en place du backend de la chatbox" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/chatbox/src/app/app.component.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
