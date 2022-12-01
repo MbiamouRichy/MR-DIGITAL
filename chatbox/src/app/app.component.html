@@ -59,10 +59,10 @@
            <mat-list class="texte-du-chat-gris">
              {{rw.message}}
            </mat-list>
-           <mat-list  *ngFor="let re of resp "
-            [class.texte-du-chat-blue]="rw.id_reponse == re.id_reponse"
-             [class.d-none]="rw.id_reponse !== re.id_reponse">
-             {{re.message_reponse}}
+           <mat-list  *ngFor="let ri of resp "
+            [class.texte-du-chat-blue]="rw.id_reponse == ri.id_reponse"
+             [class.d-none]="rw.id_reponse !== ri.id_reponse">
+             {{ri.message_reponse}}
            </mat-list>
          </div>
        </div>
