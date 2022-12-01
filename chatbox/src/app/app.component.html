@@ -1,90 +1,92 @@
-<main class="container-fluid">
-  <div class="chat-bas">
-    <div class="row row-1">
-      <div class=" row1-div1"  [class.d-none]="clic === 'clic'">
-        <p class="text-center">
-          Chattez avec moi <img class="main" src="../assets/main.svg" alt="👋🏽">
-        </p>
-      </div>
-      <div (mouseover)="onchange()"
-           (mouseout)="onpaschange()"
-           (click)="onclic()"
-           [class.row1-div2]="clic === 'noclic'"
-           [class.row1-div2-c]="clic === 'clic'">
+  <main class="container-fluid">
+   <div class="chat-bas">
+     <div class="row row-1">
+       <div class=" row1-div1"  [class.d-none]="clic === 'clic'">
+         <p class="text-center">
+           Chattez avec moi <img class="main" src="../assets/main.svg" alt="👋🏽">
+         </p>
+       </div>
+       <div (mouseover)="onchange()"
+            (mouseout)="onpaschange()"
+            (click)="onclic()"
+            [class.row1-div2]="clic === 'noclic'"
+            [class.row1-div2-c]="clic === 'clic'">
 
-        <i class="fas far" *ngIf="clic === 'noclic'"
-           [class.fa-comment-alt]="hover === 'nohover'"
-           [class.fa-pen]="hover === 'hover'"></i>
+         <i class="fas far" *ngIf="clic === 'noclic'"
+            [class.fa-comment-alt]="hover === 'nohover'"
+            [class.fa-pen]="hover === 'hover'"></i>
+        <label [class.disabled]="productForm.controls['message'].errors" for="submit"><i class="fas"
+            *ngIf="clic === 'clic'"
+            [class.fa-paper-plane]="clic === 'clic'">
+         </i></label>
+       </div>
+     </div>
+   </div>
+   <div class="chat-box flex-column"
+        [class.d-none]="clic === 'noclic'"
+        [class.d-flex]="clic === 'clic'">
+     <div class="row row-2">
+       <div class="col-md-12">
+         <div class="p-md-3 d-flex flex-row justify-content-between align-self-center bg-modifier">
+           <div class=" d-flex flex-row justify-content-center align-self-center">
+             <div class="avatar"></div>
+             <div>
+               <p class="m-2 text-white"><span class="text-petit">Discuter avec</span><br><span>Mr Digital</span></p>
+             </div>
+           </div>
+           <div class=" d-flex flex-row justify-content-between align-self-center">
+             <div class="btn-top">
+               <i class="fas fa-ellipsis-v  text-white"></i>
+             </div>
+             <div class="btn-top" id="tooltip" title="Reduire">
+               <i class="fas fa-angle-down text-white"
+                  (click)="onnoclic()"></i>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-12">
+         <div class="p-md-3 d-flex flex-row align-items-center bg-modifier">
+           <span class="fas fa-circle text-green"></span>
+           <p class="text-white text">
+             Nous repondons immediatement
+             <img class="img-courbe" src="../assets/courbe.png" alt="courbe">
+           </p>
+         </div>
+       </div>
+       <div class="col-md-12 d-flex flex-column-reverse overflow">
+         <div class=" d-flex flex-column"  *ngFor="let rw of p">
+           <mat-list class="texte-du-chat-gris">
+             {{rw.message}}
+           </mat-list>
+           <mat-list  *ngFor="let re of resp "
+            [class.texte-du-chat-blue]="rw.id_reponse == re.id_reponse"
+             [class.d-none]="rw.id_reponse !== re.id_reponse">
+             {{re.message_reponse}}
+           </mat-list>
+         </div>
+       </div>
 
-        <i class="fas"
-           *ngIf="clic === 'clic'"
-           [class.fa-paper-plane]="clic === 'clic'"></i>
-      </div>
-    </div>
-  </div>
-  <div class="chat-box flex-column"
-       [class.d-none]="clic === 'noclic'"
-       [class.d-flex]="clic === 'clic'">
-    <div class="row row-2">
-      <div class="col-md-12">
-        <div class="p-md-3 d-flex flex-row justify-content-between align-self-center bg-modifier">
-          <div class=" d-flex flex-row justify-content-center align-self-center">
-            <div class="avatar"></div>
-            <div>
-              <p class="m-2 text-white"><span class="text-petit">Discuter avec</span><br><span>Mr Digital</span></p>
-            </div>
-          </div>
-          <div class=" d-flex flex-row justify-content-between align-self-center">
-            <div class="btn-top">
-              <i class="fas fa-ellipsis-v  text-white"></i>
-            </div>
-            <div class="btn-top" id="tooltip" title="Reduire">
-              <i class="fas fa-angle-down text-white"
-                 (click)="onnoclic()"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="p-md-3 d-flex flex-row align-items-center bg-modifier">
-          <span class="fas fa-circle text-green"></span>
-          <p class="text-white text">
-            Nous repondons immediatement
-            <img class="img-courbe" src="../assets/courbe.png" alt="courbe">
-          </p>
-        </div>
-      </div>
-      <div class="col-md-12 p-1">
-        <div class="p-3 d-flex flex-column overflow">
-          <div class="texte-du-chat-gris">
-            <p>Nous sommes actuellement indisponibles.
-              Nous vous recontacterons des que l'un de nos operateurs sera en mesure de vous repondre.
-              Veuillez indiquer votre addresse e-mail afin que nous puissons vous contacter.
-              <input class="input" type="text" readonly value="  ✔ richymbiamou@gmail.com">
-            </p>
-          </div>
-          <div class="texte-du-chat-blue"><p>Hey</p></div>
-          <div class="texte-du-chat-gris"><p>Bonjour toi...</p></div>
-          <div class="texte-du-chat-blue"><p>C'est comment?</p></div>
-          <div class="texte-du-chat-gris"><p>On est la</p></div>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <p class="trait"></p>
-      </div>
-      <div class="col-md-12 m-2">
-        <textarea maxlength="200" class="saisissez" placeholder="Saisissez votre message..."></textarea>
-      </div>
-      <div class="col-md-12 marge">
-        <div class="d-flex flex-row align-items-center justify-content-md-around">
-          <div class="pb-2 d-flex flex-row justify-content-between align-items-center">
-            <span class="font-1 font fas fa-paperclip"></span>
-            <span class="font-2 font fas fa-smile"></span>
-          </div>
-          <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mr Digital</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
+       <form [formGroup]="productForm" (ngSubmit)="creat(productForm.value, false)" class="col-md-12 m-2">
+         <div class="col-md-12">
+           <p class="trait"></p>
+         </div>
+         <textarea formControlName="message" required  maxlength="200" class="saisissez" placeholder="Saisissez votre message..."></textarea>
+         <input class="d-none" type="number" formControlName="reponse">
+         <input class="d-none" type="submit" id="submit"
+        [class.is-valid]="productForm.controls['message'].errors">
+       </form>
+       <div class="col-md-12 marge">
+         <div class="d-flex flex-row align-items-center justify-content-md-around">
+           <div class="pb-2 d-flex flex-row justify-content-between align-items-center">
+             <span class="font-1 font fas fa-paperclip"></span>
+             <span class="font-2 font fas fa-smile"></span>
+           </div>
+           <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mr Digital</span></div>
+         </div>
+       </div>
+     </div>
+   </div>
 
-</main>
+ </main>
+

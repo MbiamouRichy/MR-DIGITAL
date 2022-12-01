@@ -1,22 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageAccueilComponent } from './page-accueil/page-accueil.component';
-import { PageProduitComponent } from './page-produit/page-produit.component';
+import {HttpClientModule} from "@angular/common/http";
+import {MatMenuModule} from "@angular/material/menu";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {MatListModule} from "@angular/material/list";
+import {MatDividerModule} from "@angular/material/divider";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageAccueilComponent,
-    PageProduitComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatListModule,
+    BrowserAnimationsModule,
+    MatDividerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    HttpClientModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatListModule,
+    BrowserAnimationsModule,
+    MatDividerModule,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
