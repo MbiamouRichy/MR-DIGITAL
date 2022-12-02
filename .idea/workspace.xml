@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="Mise en place du backend de la chatbox">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBox/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/app/name.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/app/name.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBox/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,17 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MBIAMOU RICHY/Documents/GitHub/MR-DIGITAL/chatbox/node_modules",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\MBIAMOU RICHY\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MBIAMOU RICHY/Documents/GitHub/MR-DIGITAL/chatbox/node_modules&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MBIAMOU RICHY\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MBIAMOU RICHY\Documents\GitHub\MR-DIGITAL\chatbox\node_modules" />
@@ -66,7 +77,7 @@
       <workItem from="1669640481881" duration="7068000" />
       <workItem from="1669720898671" duration="4452000" />
       <workItem from="1669893910508" duration="31000" />
-      <workItem from="1669894033207" duration="2380000" />
+      <workItem from="1669894033207" duration="3570000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
@@ -116,7 +127,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/chatbox/src/app/app.component.ts</url>
+          <url>file://$PROJECT_DIR$/ChatBox/src/app/app.component.ts</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

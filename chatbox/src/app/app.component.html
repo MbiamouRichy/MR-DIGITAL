@@ -54,19 +54,24 @@
            </p>
          </div>
        </div>
-       <div class="col-md-12 d-flex flex-column-reverse overflow">
-         <div class=" d-flex flex-column"  *ngFor="let rw of p">
+       <div class="col-md-12 d-flex flex-column-reverse" id="overflow" >
+         <div class="child d-flex flex-column"  *ngFor="let rw of p">
            <mat-list class="texte-du-chat-gris">
              {{rw.message}}
            </mat-list>
-           <mat-list  *ngFor="let ri of resp "
-            [class.texte-du-chat-blue]="rw.id_reponse == ri.id_reponse"
-             [class.d-none]="rw.id_reponse !== ri.id_reponse">
-             {{ri.message_reponse}}
-           </mat-list>
+           <div *ngIf="affiche(rw.id_reponse)"
+                class="texte-du-chat-blue">
+             <mat-list>
+               {{re.message_reponse}}
+             </mat-list>
+             <div class="dots d-none">
+               <div></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
          </div>
        </div>
-
        <form [formGroup]="productForm" (ngSubmit)="creat(productForm.value, false)" class="col-md-12 m-2">
          <div class="col-md-12">
            <p class="trait"></p>
