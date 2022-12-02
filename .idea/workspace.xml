@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="Mise en place du backend de la chatbox">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBox/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBox/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBox/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBox/package-lock.json" afterDir="false" />
@@ -78,7 +79,7 @@
       <workItem from="1669640481881" duration="7068000" />
       <workItem from="1669720898671" duration="4452000" />
       <workItem from="1669893910508" duration="31000" />
-      <workItem from="1669894033207" duration="3894000" />
+      <workItem from="1669894033207" duration="5120000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
