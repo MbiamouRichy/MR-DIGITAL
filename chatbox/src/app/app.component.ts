@@ -59,7 +59,6 @@ export class AppComponent implements  OnInit{
     for (let i of this.resp){
       if (i.id_reponse == p){
         this.re = i
-        console.log('re',this.re)
         return this.re
       }
     }
@@ -85,33 +84,37 @@ export class AppComponent implements  OnInit{
   r13 = /Vente/ig;
   r14 = /^[1]/ig;
   r15 = /Salut/ig;
-
-
+  res1 = /Avez vous les outils necessaires comme un site web , une application ou un reseau social/ig;
+  res2 = /Quelle difficulte rencontree vous parmi celles ci/ig;
   creat(values: any, isUpdate:any){
+    let message = document.querySelector('#message');
+    // @ts-ignore
+    let content = message.firstElementChild.textContent
     if (values.message.match(this.r1) || values.message.match(this.r1)){
       values.reponse = 1;
     }else if (values.message.match(this.r14) || values.message.match(this.r2)){
       values.reponse = 5;
-    }else if (values.message.match(this.r7) &&
-      this.re.message_reponse == "Avez vous les outils necessaires comme un site web , une application ou un reseau social"){
-      values.reponse = 6;
-    } else if ((values.message.match(this.r9) || values.message.match(this.r10)
-    || values.message.match(this.r11) || values.message.match(this.r12)
-    || values.message.match(this.r13)) && this.re.message_reponse == "Quelle difficulte rencontree vous parmi celles ci:\n" +
-      "A.Strategie\n" +
-      "B.Visibilite\n" +
-      "C.Credibilite\n" +
-      "D.Vente\n" +
-      "E.Au niveau du contenu\n" +
-      "F.Tous"){
-      values.reponse = 7;
-   }else if (values.message.match(this.r5) &&
-      this.re.message_reponse == "Avez vous les outils necessaires comme un site web , une application ou un reseau social "){
-      values.reponse = 8;
     }
-    else
-    {
-      values.reponse = 2;
+    else {
+      // @ts-ignore
+      if (values.message.match(this.r7) && content.match(this.res1)){
+            values.reponse = 6;
+          }
+      else
+        { // @ts-ignore
+          if ( content.match(this.res2) && (values.message.match(this.r9) || values.message.match(this.r10)
+                        || values.message.match(this.r11) || values.message.match(this.r12)
+                        || values.message.match(this.r13))){
+                      values.reponse = 7;
+                    }
+          else { // @ts-ignore
+            if (values.message.match(this.r5) && content.match(this.res1)){
+                values.reponse = 8;
+            }
+            else
+            {values.reponse = 2;}
+          }
+        }
     }
     let formData = new FormData();
     formData.append('message', values.message);
@@ -123,6 +126,9 @@ export class AppComponent implements  OnInit{
       this.nameService.creat(formData).subscribe(res => {
         /* if(res.result === 'success') {
             this.router.navigate(['A']) }*/
+        let texte_env = document.querySelector('.saisissez')
+        // @ts-ignore
+        texte_env.value = ''
         let overflow = document.querySelector('#overflow');
         // @ts-ignore
         let matelement:any;
@@ -144,7 +150,10 @@ export class AppComponent implements  OnInit{
             mat2.classList.remove('d-none')
             compte++;
             if (compte == 20){
-              this.ngOnInit()
+              // @ts-ignore
+              mat2.classList.add('d-none')
+              // @ts-ignore
+              mat1.classList.remove('d-none')
               clearInterval(interval)
             }
           },100

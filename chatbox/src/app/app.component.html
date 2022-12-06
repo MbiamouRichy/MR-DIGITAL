@@ -60,7 +60,7 @@
            <mat-list class="texte-du-chat-gris">
              {{rw.message}}
            </mat-list>
-           <div *ngIf="affiche(rw.id_reponse)"
+           <div id="message" *ngIf="affiche(rw.id_reponse)"
                 class="texte-du-chat-blue">
              <mat-list>
                {{re.message_reponse}}
