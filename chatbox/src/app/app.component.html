@@ -1,7 +1,7 @@
   <main class="container-fluid">
    <div class="chat-bas">
      <div class="row row-1">
-       <div class=" row1-div1"  [class.d-none]="clic === 'clic'">
+       <div class=" row1-div1 bg-white"  [class.d-none]="clic === 'clic'">
          <p class="text-center">
            Chattez avec moi <img class="main" src="../assets/main.svg" alt="👋🏽">
          </p>
@@ -55,7 +55,8 @@
          </div>
        </div>
        <div class="col-md-12 d-flex flex-column-reverse" id="overflow" >
-         <div class="child d-flex flex-column"  *ngFor="let rw of p">
+         <div class="child d-flex flex-column justify-content-center"  *ngFor="let rw of p">
+            <p class="text-center p-text">Aujourd'hui</p>
            <mat-list class="texte-du-chat-gris">
              {{rw.message}}
            </mat-list>
@@ -86,6 +87,7 @@
            <div class="pb-2 d-flex flex-row justify-content-between align-items-center">
              <span class="font-1 font fas fa-paperclip"></span>
              <span class="font-2 font fas fa-smile"></span>
+             <span class="font-2 font fas fa-microphone"></span>
            </div>
            <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mr Digital</span></div>
          </div>
