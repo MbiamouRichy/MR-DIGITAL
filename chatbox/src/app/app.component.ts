@@ -86,36 +86,47 @@ export class AppComponent implements  OnInit{
   r15 = /Salut/ig;
   res1 = /Avez vous les outils necessaires comme un site web , une application ou un reseau social/ig;
   res2 = /Quelle difficulte rencontree vous parmi celles ci/ig;
+  res3 = /Nous vous proposons de creer vos outils/ig
   creat(values: any, isUpdate:any){
-    let message = document.querySelector('#message');
+
     // @ts-ignore
-    let content = message.firstElementChild.textContent
-    if (values.message.match(this.r1) || values.message.match(this.r1)){
+   let message = document.querySelector('#message');
+    // @ts-ignore
+   let content = message.firstElementChild.textContent
+    if (values.message.match(this.r1) || values.message.match(this.r15)){
       values.reponse = 1;
-    }else if (values.message.match(this.r14) || values.message.match(this.r2)){
+    }
+    else if (values.message.match(this.r14) || values.message.match(this.r2)){
       values.reponse = 5;
     }
-    else {
+    else
       // @ts-ignore
-      if (values.message.match(this.r7) && content.match(this.res1)){
-            values.reponse = 6;
-          }
-      else
-        { // @ts-ignore
-          if ( content.match(this.res2) && (values.message.match(this.r9) || values.message.match(this.r10)
-                        || values.message.match(this.r11) || values.message.match(this.r12)
-                        || values.message.match(this.r13))){
-                      values.reponse = 7;
-                    }
-          else { // @ts-ignore
-            if (values.message.match(this.r5) && content.match(this.res1)){
-                values.reponse = 8;
-            }
-            else
-            {values.reponse = 2;}
-          }
-        }
+    if (values.message.match(this.r7) && content.match(this.res1)){
+      values.reponse = 6;
+      }
+    else
+      // @ts-ignore
+    if (values.message.match(this.r7) && content.match(this.res3)){
+      values.reponse = 9;
     }
+    else
+        // @ts-ignore
+      if ( content.match(this.res2) && (values.message.match(this.r9) || values.message.match(this.r10)
+          || values.message.match(this.r11) || values.message.match(this.r12)
+          || values.message.match(this.r13))){
+          values.reponse = 7;
+      }
+    else
+        // @ts-ignore
+        if (values.message.match(this.r5) && content.match(this.res1)) {
+              values.reponse = 8;
+            }
+
+    else {
+            values.reponse = 2;
+      }
+
+
     let formData = new FormData();
     formData.append('message', values.message);
     formData.append('reponse', values.reponse);

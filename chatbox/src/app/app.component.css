@@ -53,7 +53,7 @@ main{
   height: 50px;
   width: 50px;
   align-items: center;
-  background: #2299aa linear-gradient(180deg,rgb(22,84,83),rgb(22,84,82)) repeat-x;
+  background: rgb(42,122,121) linear-gradient(180deg,rgb(42,122,121),#2299aa) repeat-x;
   margin-left: 10px;
   box-shadow: rgb(22 84 83) 0px 2px 16px 0px;
   color: white;
