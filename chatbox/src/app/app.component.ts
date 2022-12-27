@@ -14,6 +14,8 @@ export class AppComponent implements  OnInit{
   productForm: FormGroup;
   hover = 'nohover';
   clic = 'noclic';
+
+  last = new Date();
   onchange(){
     this.hover =  'hover';
   }
@@ -86,13 +88,14 @@ export class AppComponent implements  OnInit{
   r15 = /Salut/ig;
   res1 = /Avez vous les outils necessaires comme un site web , une application ou un reseau social/ig;
   res2 = /Quelle difficulte rencontree vous parmi celles ci/ig;
-  res3 = /Nous vous proposons de creer vos outils/ig
+  res3 = /Nous vous proposons de creer vos outils/ig;
+
   creat(values: any, isUpdate:any){
 
     // @ts-ignore
-   let message = document.querySelector('#message');
+    let message = document.querySelector('#message');
     // @ts-ignore
-   let content = message.firstElementChild.textContent
+    let content = message.firstElementChild.textContent
     if (values.message.match(this.r1) || values.message.match(this.r15)){
       values.reponse = 1;
     }

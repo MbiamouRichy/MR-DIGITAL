@@ -40,7 +40,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MBIAMOU RICHY/Desktop/chatbox&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MBIAMOU RICHY/Downloads/Compressed/prosite-main&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MBIAMOU RICHY\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -84,7 +84,10 @@
       <workItem from="1670061886500" duration="1550000" />
       <workItem from="1670329488468" duration="1436000" />
       <workItem from="1670331071631" duration="4776000" />
-      <workItem from="1670407583334" duration="4594000" />
+      <workItem from="1670407583334" duration="9674000" />
+      <workItem from="1670670549753" duration="3177000" />
+      <workItem from="1671835674523" duration="149000" />
+      <workItem from="1672093963503" duration="9386000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>

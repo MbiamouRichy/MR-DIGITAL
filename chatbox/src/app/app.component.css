@@ -180,14 +180,19 @@ main{
   background: transparent;
 }
 .texte-du-chat-gris,.texte-du-chat-blue{
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 8px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 30px;
   font-size: 13px;
   margin: 0px 0px 3px 0px;
   font-family: Arial;
+  width: fit-content;
+  position: relative;
 }
 .texte-du-chat-gris{
-  max-width: 70%;
+  max-width: 90%;
   background: rgb(205,204,213);
   color: black;
   text-align: left;
@@ -196,7 +201,7 @@ main{
   align-self: start;
 }
 .texte-du-chat-blue{
-  max-width: 70%;
+  max-width: 90%;
   background: #2299aa;
   color: white;
   text-align: left;
@@ -206,6 +211,22 @@ main{
 }
 .texte-du-chat-blue mat-list{
   font-size: 13px;
+}
+.heure, .heure1{
+  font-size: 0.7rem;
+}
+.heure1{
+  border-radius: 8px;
+  background-color:rgba(205,204,213,0.4);
+  text-align: center;
+  display: flex;
+  align-self: center;
+  padding: 5px;
+}
+.heure{
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
 }
 .input{
   border-radius: 5px;
