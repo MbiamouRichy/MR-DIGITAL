@@ -209,7 +209,7 @@ main{
   justify-content: flex-end;
   align-self: end;
 }
-.texte-du-chat-blue mat-list{
+.texte-du-chat-gris mat-list{
   font-size: 13px;
 }
 .heure, .heure1{

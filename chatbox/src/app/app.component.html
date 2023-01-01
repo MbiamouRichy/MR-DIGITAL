@@ -57,12 +57,12 @@
        <div class="col-md-12 d-flex flex-column-reverse" id="overflow" >
          <div class="child d-flex flex-column justify-content-center"  *ngFor="let rw of p">
            <p class="heure1">{{last | date: 'dd.MMM.YYYY'}}</p>
-           <mat-list class="texte-du-chat-gris">
+           <mat-list class="texte-du-chat-blue">
              {{rw.message}}
              <span class="heure">{{last | date: 'HH:mm'}}</span>
            </mat-list>
            <div id="message" *ngIf="affiche(rw.id_reponse)"
-                class="texte-du-chat-blue">
+                class="texte-du-chat-gris">
              <mat-list>
                {{re.message_reponse}}
                <span class="heure">{{last | date: 'HH:mm'}}</span>
