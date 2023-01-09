@@ -15,7 +15,7 @@
          <i class="fas far" *ngIf="clic === 'noclic'"
             [class.fa-comment-alt]="hover === 'nohover'"
             [class.fa-pen]="hover === 'hover'"></i>
-        <label [class.disabled]="productForm.controls['message'].errors" for="submit"><i class="fas"
+        <label (click)="listen()" id="label" for="submit"><i class="fas"
             *ngIf="clic === 'clic'"
             [class.fa-paper-plane]="clic === 'clic'">
          </i></label>
@@ -26,12 +26,12 @@
         [class.d-none]="clic === 'noclic'"
         [class.d-flex]="clic === 'clic'">
      <div class="row row-2">
-       <div class="col-md-12">
-         <div class="p-md-3 d-flex flex-row justify-content-between align-self-center bg-modifier">
+       <div class="col-md-12  bg-modifier">
+         <div class="p-md-3 d-flex flex-row justify-content-between align-self-center">
            <div class=" d-flex flex-row justify-content-center align-self-center">
              <div class="avatar"></div>
              <div>
-               <p class="m-2 text-white"><span class="text-petit">Discuter avec</span><br><span>Mr Digital</span></p>
+               <p class="m-2 text-white"><span class="text-petit">Discuter avec</span><br><span>Mbiamou</span></p>
              </div>
            </div>
            <div class=" d-flex flex-row justify-content-between align-self-center">
@@ -44,9 +44,8 @@
              </div>
            </div>
          </div>
-       </div>
-       <div class="col-md-12">
-         <div class="p-md-3 d-flex flex-row align-items-center bg-modifier">
+
+         <div class="p-md-3 d-flex flex-row align-items-center">
            <p class="text-white text">
              <span class="fas fa-circle text-green"></span>
              Nous repondons immediatement
@@ -56,16 +55,13 @@
        </div>
        <div class="col-md-12 d-flex flex-column-reverse" id="overflow" >
          <div class="child d-flex flex-column justify-content-center"  *ngFor="let rw of p">
-           <p class="heure1">{{last | date: 'dd.MMM.YYYY'}}</p>
            <mat-list class="texte-du-chat-blue">
              {{rw.message}}
-             <span class="heure">{{last | date: 'HH:mm'}}</span>
            </mat-list>
            <div id="message" *ngIf="affiche(rw.id_reponse)"
                 class="texte-du-chat-gris">
              <mat-list>
                {{re.message_reponse}}
-               <span class="heure">{{last | date: 'HH:mm'}}</span>
              </mat-list>
              <div class="dots d-none">
                <div></div>
@@ -73,16 +69,25 @@
                <div></div>
              </div>
            </div>
+           <div *ngIf="rw.id_reponse == 1"
+                class="texte-du-chat-gris">
+             <mat-list>
+               je resoud les problemes en:<br>
+               1-marketing digital,<br>
+               2-developpement des sites web et applications,<br>
+               3-support de communication(flyers, carte de visite),<br>
+               4-materiel informatique
+             </mat-list>
+           </div>
          </div>
        </div>
-       <form [formGroup]="productForm" (ngSubmit)="creat(productForm.value, false)" class="col-md-12 m-2">
+       <form #f="ngForm" (ngSubmit)="creat(f)" class="col-md-12 m-2">
          <div class="col-md-12">
            <p class="trait"></p>
          </div>
-         <textarea formControlName="message" required  maxlength="200" class="saisissez" placeholder="Saisissez votre message..."></textarea>
-         <input class="d-none" type="number" formControlName="reponse">
-         <input class="d-none" type="submit" id="submit"
-        [class.is-valid]="productForm.controls['message'].errors">
+         <textarea name="message" ngModel required  maxlength="200" class="saisissez" placeholder="Saisissez votre message..."></textarea>
+         <input class="d-none" type="number" name="reponse" ngModel>
+         <input class="d-none" type="submit" id="submit" [disabled]="f.invalid">
        </form>
        <div class="col-md-12 marge">
          <div class="d-flex flex-row align-items-center justify-content-md-around">
@@ -91,7 +96,7 @@
              <span class="font-2 font fas fa-smile"></span>
              <span class="font-2 font fas fa-microphone"></span>
            </div>
-           <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mr Digital</span></div>
+           <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mbiamou</span></div>
          </div>
        </div>
      </div>
