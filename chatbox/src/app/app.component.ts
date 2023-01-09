@@ -32,6 +32,7 @@ export class AppComponent implements  OnInit{
   ngOnInit(): void {
     this.getProductList();
     this.getreponse();
+    this.load();
   }
 
   p: any = [];
@@ -77,82 +78,76 @@ export class AppComponent implements  OnInit{
   res3 = /Nous vous proposons de creer vos outils/ig;
 
   creat(form: NgForm){
-    // @ts-ignore
-    let message = document.querySelector('#message');
-    // @ts-ignore
-    let content = message.firstElementChild.textContent
     if (form.value.message.match(this.r1) || form.value.message.match(this.r15)){
       form.value.reponse = 1;
     }
-    else if (form.value.message.match(this.r14) || form.value.message.match(this.r2)){
-      form.value.reponse = 5;
-    }
-    else
+    else {
       // @ts-ignore
-    if (form.value.message.match(this.r7) && content.match(this.res1)){
-      form.value.reponse = 6;
+      let message = document.querySelector('#message');
+      // @ts-ignore
+      let content = message.firstElementChild.textContent
+
+      if (form.value.message.match(this.r14) || form.value.message.match(this.r2)){
+        form.value.reponse = 5;
       }
-    else
-      // @ts-ignore
-    if (form.value.message.match(this.r7) && content.match(this.res3)){
-      form.value.reponse = 9;
-    }
-    else
+      else
+        // @ts-ignore
+      if (form.value.message.match(this.r7) && content.match(this.res1)){
+        form.value.reponse = 6;
+      }
+      else
+        // @ts-ignore
+      if (form.value.message.match(this.r7) && content.match(this.res3)){
+        form.value.reponse = 9;
+      }
+      else
         // @ts-ignore
       if ( content.match(this.res2) && (values.message.match(this.r9) || form.value.message.match(this.r10)
-          || form.value.message.match(this.r11) || form.value.message.match(this.r12)
-          || form.value.message.match(this.r13))){
-          form.value.reponse = 7;
+        || form.value.message.match(this.r11) || form.value.message.match(this.r12)
+        || form.value.message.match(this.r13))){
+        form.value.reponse = 7;
       }
-    else
+      else
         // @ts-ignore
-        if (form.value.message.match(this.r5) && content.match(this.res1)) {
-              form.value.reponse = 8;
-            }
-
-    else {
-            form.value.reponse = 2;
+      if (form.value.message.match(this.r5) && content.match(this.res1)) {
+        form.value.reponse = 8;
       }
+
+      else {
+        form.value.reponse = 2;
+      }
+    }
     let formData = new FormData();
     formData.append('message', form.value.message);
     formData.append('reponse', form.value.reponse);
-      this.nameService.creat(formData).subscribe(res => {
-
-        let texte_env = document.querySelector('.saisissez')
-        // @ts-ignore
-        texte_env.value = ''
-        let compte = 0;
-        this.getProductList()
-        const interval = setInterval(
-          ()=>{
-            // @ts-ignore
-            let mat = document.getElementById('message');
-            let overflow = document.getElementById('overflow')
-            // @ts-ignore
-            child = overflow.lastElementChild
-            // @ts-ignore
-            child.classList.add('bg-dark')
-            // @ts-ignore
-            let mat1 = mat.firstElementChild
-            // @ts-ignore
-            let mat2 = mat.lastElementChild
-            // @ts-ignore
-            mat1.classList.add('d-none')
-            // @ts-ignore
-            mat2.classList.remove('d-none')
-            compte++;
-            if (compte == 20){
-              // @ts-ignore
-              mat2.classList.add('d-none')
-              // @ts-ignore
-              mat1.classList.remove('d-none')
-              clearInterval(interval)
-            }
-
-          },100
-        )
-      },error => {console.log('erreur', error)});
+      this.nameService.creat(formData).subscribe(res => {},error => {console.log('erreur', error)});
     form.reset();
+
+    let compte = 0;
+    this.getProductList()
+    const interval = setInterval(
+      ()=>{
+        // @ts-ignore
+        let mat = document.getElementById('message');
+        // @ts-ignore
+        let mat1 = mat.firstElementChild
+        // @ts-ignore
+        let mat2 = mat.lastElementChild
+        // @ts-ignore
+        mat1.classList.add('d-none')
+        // @ts-ignore
+        mat2.classList.remove('d-none')
+        compte++;
+        if (compte == 20){
+          // @ts-ignore
+          mat2.classList.add('d-none')
+          // @ts-ignore
+          mat1.classList.remove('d-none')
+          clearInterval(interval)
+        }
+
+      },100
+    )
   }
   listen() {
     let label = document.getElementById('label');
@@ -173,5 +168,15 @@ export class AppComponent implements  OnInit{
         }, 100
       )
     }
+  }
+
+  load(){
+    let overflow = document.getElementById('overflow')
+    // @ts-ignore
+    child = overflow.lastElementChild
+    // @ts-ignore
+    chil = child.lastElementChild
+    // @ts-ignore
+    chil.classList.add('bg-dark')
   }
 }
