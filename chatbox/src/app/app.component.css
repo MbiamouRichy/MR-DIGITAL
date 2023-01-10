@@ -56,12 +56,14 @@ main{
   margin-left: 10px;
   box-shadow: rgb(22 84 83) 0px 2px 16px 0px;
   color: white;
+  cursor: pointer;
   transition: transform .6s ease-in-out;
 }
 .row1-div2 i{
   line-height: 20px;
   font-size: 20px;
   z-index: 3;
+  cursor: pointer;
 }
 .row1-div2-c i{
   position: absolute;
@@ -69,6 +71,11 @@ main{
   left: 25px;
   line-height: 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+.row1-div2-c.click{
+  background: white;
+  color: rgb(0, 72, 234);
 }
 .row1-div2::before{
   position: absolute;

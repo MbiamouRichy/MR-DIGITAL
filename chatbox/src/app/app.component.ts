@@ -73,12 +73,13 @@ export class AppComponent implements  OnInit{
   r13 = /Vente/ig;
   r14 = /^[1]/ig;
   r15 = /Salut/ig;
+  r16 = /[^ ]/;
   res1 = /Avez vous les outils necessaires comme un site web , une application ou un reseau social/ig;
   res2 = /Quelle difficulte rencontree vous parmi celles ci/ig;
   res3 = /Nous vous proposons de creer vos outils/ig;
 
   creat(form: NgForm){
-    if (form.value.message.match(this.r1) || form.value.message.match(this.r15)){
+    if (form.value.message.match(this.r1) || form.value.message.match(this.r15) || form.value.message.match(this.r16)){
       form.value.reponse = 1;
     }
     else {
@@ -149,8 +150,22 @@ export class AppComponent implements  OnInit{
       },100
     )
   }
+  search(rw: any){
+    let i = ""
+    if (rw == 1){
+      i = 'd-flex'
+      return  i;
+    }
+    else {
+      i = 'd-none'
+      return i;
+    }
+  }
   listen() {
     let label = document.getElementById('label');
+    let div = document.querySelector('.row1-div2-c')
+    // @ts-ignore
+    div.classList.add('click')
     let input = document.querySelector('.saisissez')
     // @ts-ignore
     if (input.value == "") {
@@ -164,6 +179,8 @@ export class AppComponent implements  OnInit{
             clearInterval(set)
             // @ts-ignore
             input.classList.remove('erreur')
+            // @ts-ignore
+            div.classList.remove('click')
           }
         }, 100
       )
