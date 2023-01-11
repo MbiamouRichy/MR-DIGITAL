@@ -197,12 +197,16 @@ main{
 }
 .texte-du-chat-gris{
   max-width: 90%;
-  background: rgba(205,204,213,0.5);
+  background: rgba(205,204,213,0.6);
   color: black;
   text-align: left;
   display: flex;
   justify-content: flex-start;
   align-self: start;
+}
+.gris{
+  border: none;
+  background: rgba(205,204,213,1);
 }
 .texte-du-chat-blue{
   max-width: 90%;
