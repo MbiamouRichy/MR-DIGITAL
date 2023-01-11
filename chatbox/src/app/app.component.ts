@@ -105,7 +105,7 @@ export class AppComponent implements  OnInit {
         form.value.reponse = 9;
       } else
         // @ts-ignore
-      if (content.match(this.res2) && (values.message.match(this.r9) || form.value.message.match(this.r10)
+      if (content.match(this.res2) && (form.value.message.match(this.r9) || form.value.message.match(this.r10)
         || form.value.message.match(this.r11) || form.value.message.match(this.r12)
         || form.value.message.match(this.r13))) {
         form.value.reponse = 7;
@@ -121,6 +121,9 @@ export class AppComponent implements  OnInit {
     formData.append('message', form.value.message);
     formData.append('reponse', form.value.reponse);
     this.nameService.creat(formData).subscribe(res => {
+      let div = document.querySelector('.row1-div2-c')
+      // @ts-ignore
+      div.classList.remove('click')
     }, error => {
       console.log('erreur', error)
     });
