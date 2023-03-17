@@ -92,7 +92,7 @@
       <workItem from="1677180044911" duration="140000" />
       <workItem from="1677193761837" duration="5739000" />
       <workItem from="1677214637592" duration="621000" />
-      <workItem from="1678573288552" duration="4831000" />
+      <workItem from="1678573288552" duration="4938000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677206766415</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mise en place du backend de la chatbox">
+      <created>1678670854798</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678670854798</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
