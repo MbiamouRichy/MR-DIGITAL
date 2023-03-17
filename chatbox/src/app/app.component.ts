@@ -158,23 +158,18 @@ export class AppComponent implements  OnInit {
 
   listen() {
     let label = document.getElementById('label');
-    let div = document.querySelector('.row1-div2-c')
-    // @ts-ignore
+    let div = document.querySelector('.row1-div2-c') as HTMLElement
     div.classList.add('click')
-    let input = document.querySelector('.saisissez')
-    // @ts-ignore
+    let input = document.querySelector('.saisissez') as HTMLInputElement;
     if (input.value == "") {
       let c = 0;
       const set = setInterval(
         () => {
-          // @ts-ignore
           input.classList.add('erreur')
           c++;
           if (c == 10) {
             clearInterval(set)
-            // @ts-ignore
             input.classList.remove('erreur')
-            // @ts-ignore
             div.classList.remove('click')
           }
         }, 100
