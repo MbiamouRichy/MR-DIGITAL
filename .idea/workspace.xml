@@ -23,18 +23,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mbiamou Richy/Documents/GitHub/app-test-angular&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Mbiamou Richy/Documents/GitHub/Crud-avec-angular",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mbiamou Richy\Documents\GitHub\MR-DIGITAL\ChatBox\src\assets\bootstrap" />
@@ -92,6 +92,7 @@
       <workItem from="1677214637592" duration="621000" />
       <workItem from="1678573288552" duration="4938000" />
       <workItem from="1679027800330" duration="142000" />
+      <workItem from="1679180989786" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
