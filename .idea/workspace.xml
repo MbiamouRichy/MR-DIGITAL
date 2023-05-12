@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="amelioration du seo" />
+    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="amelioration du seo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/.idea/php.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/db/WebApi.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/db/bdtest.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/view_res.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mbiamou Richy/Documents/GitHub/Crud-avec-angular",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mbiamou Richy/Documents/GitHub/Crud-avec-angular&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mbiamou Richy\Documents\GitHub\MR-DIGITAL\ChatBox\src\assets\bootstrap" />
@@ -93,6 +106,7 @@
       <workItem from="1678573288552" duration="4938000" />
       <workItem from="1679027800330" duration="142000" />
       <workItem from="1679180989786" duration="67000" />
+      <workItem from="1683849513833" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
