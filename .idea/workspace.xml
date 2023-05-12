@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="augmentation du nombres de conversation">
+    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="mise en place du scroll vers le bas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       <workItem from="1678573288552" duration="4938000" />
       <workItem from="1679027800330" duration="142000" />
       <workItem from="1679180989786" duration="67000" />
-      <workItem from="1683849513833" duration="15999000" />
+      <workItem from="1683849513833" duration="17376000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683862785883</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mise en place du scroll vers le bas">
+      <created>1683866748508</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683866748508</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +193,8 @@
     <MESSAGE value="renisialisation du projet" />
     <MESSAGE value="mise en place du tableau des reponses" />
     <MESSAGE value="augmentation du nombres de conversation" />
-    <option name="LAST_COMMIT_MESSAGE" value="augmentation du nombres de conversation" />
+    <MESSAGE value="mise en place du scroll vers le bas" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise en place du scroll vers le bas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
