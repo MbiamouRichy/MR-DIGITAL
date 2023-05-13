@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="optimisation de la chatbox">
+    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +25,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mbiamou Richy/Documents/GitHub/MR-DIGITAL/ChatBox/src",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mbiamou Richy/Documents/GitHub/MR-DIGITAL/ChatBox/src&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Mbiamou Richy\\Documents\\GitHub\\MR-DIGITAL\\ChatBox\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mbiamou Richy\Documents\GitHub\MR-DIGITAL\ChatBox\src" />
@@ -96,7 +96,8 @@
       <workItem from="1678573288552" duration="4938000" />
       <workItem from="1679027800330" duration="142000" />
       <workItem from="1679180989786" duration="67000" />
-      <workItem from="1683849513833" duration="18385000" />
+      <workItem from="1683849513833" duration="18567000" />
+      <workItem from="1684000372592" duration="4722000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
@@ -175,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683867129106</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="responsive">
+      <created>1683868279711</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683868279711</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +210,8 @@
     <MESSAGE value="augmentation du nombres de conversation" />
     <MESSAGE value="mise en place du scroll vers le bas" />
     <MESSAGE value="optimisation de la chatbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimisation de la chatbox" />
+    <MESSAGE value="responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
