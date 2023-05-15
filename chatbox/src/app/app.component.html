@@ -1,22 +1,22 @@
-  <main class="container-fluid">
+  <main>
    <div class="chat-bas">
      <div class="row row-1">
        <div class=" row1-div1 bg-white"  [class.d-none]="clic === 'clic'">
-         <p class="text-center">
+         <p class="text-center p_bas">
            Chattez avec moi <img class="main" src="../assets/main.svg" alt="👋🏽">
          </p>
        </div>
        <div (mouseover)="onchange()"
             (mouseout)="onpaschange()"
             (click)="onclic()"
+            (click)="scroll()"
             [class.row1-div2]="clic === 'noclic'"
             [class.row1-div2-c]="clic === 'clic'">
 
          <i class="fas far" *ngIf="clic === 'noclic'"
             [class.fa-comment-alt]="hover === 'nohover'"
             [class.fa-pen]="hover === 'hover'"></i>
-        <label (click)="listen()" id="label" for="submit"><i class="fas"
-            *ngIf="clic === 'clic'"
+        <label *ngIf="clic === 'clic'" (click)="listen()" id="label" for="submit"><i class="fas"
             [class.fa-paper-plane]="clic === 'clic'">
          </i></label>
        </div>
@@ -29,7 +29,9 @@
        <div class="col-md-12  bg-modifier">
          <div class="p-md-3 d-flex flex-row justify-content-between align-self-center">
            <div class=" d-flex flex-row justify-content-center align-self-center">
-             <div class="avatar"></div>
+             <div class="avatar">
+               <img src="../assets/icon_glasses.c8ec128.png" alt="lunette-de-l'expert">
+             </div>
              <div>
                <p class="m-2 text-white"><span class="text-petit">Discuter avec</span><br><span>Mbiamou</span></p>
              </div>
@@ -49,44 +51,29 @@
            <p class="text-white text">
              <span class="fas fa-circle text-green"></span>
              Nous repondons immediatement
-             <img class="img-courbe" src="../assets/courbe.png" alt="courbe">
            </p>
+           <img class="img-courbe" src="../assets/courbe.png" alt="courbe">
          </div>
        </div>
-       <div class="col-md-12 d-flex flex-column-reverse" id="overflow" >
-         <div class="child d-flex flex-column justify-content-center"  *ngFor="let rw of p">
-           <mat-list class="texte-du-chat-blue">
-             {{rw.message}}
-           </mat-list>
-           <div id="message" *ngIf="affiche(rw.id_reponse)"
-                class="texte-du-chat-gris">
-             <mat-list>
-               {{re.message_reponse}}
-             </mat-list>
-             <div class="dots d-none">
-               <div></div>
-               <div></div>
-               <div></div>
-             </div>
+       <div class="col-md-12 d-flex flex-column" id="overflow" >
+         <div class="block-message">
+           <div *ngFor="let message of messages"
+                class="{{message.class}}">
+             {{message.message}}
            </div>
          </div>
+
        </div>
        <form #f="ngForm" (ngSubmit)="creat(f)" class="col-md-12 m-2">
          <div class="col-md-12">
            <p class="trait"></p>
          </div>
          <textarea name="message" ngModel required  maxlength="200" class="saisissez" placeholder="Saisissez votre message..."></textarea>
-         <input class="d-none" type="number" name="reponse" ngModel>
          <input class="d-none" type="submit" id="submit" [disabled]="f.invalid">
        </form>
        <div class="col-md-12 marge">
          <div class="d-flex flex-row align-items-center justify-content-md-around">
-           <div class="pb-2 d-flex flex-row justify-content-between align-items-center">
-             <span class="font-1 font fas fa-paperclip"></span>
-             <span class="font-2 font fas fa-smile"></span>
-             <span class="font-2 font fas fa-microphone"></span>
-           </div>
-           <div class="footer-text">Powerred by <img class="favicon" src="../assets/favicon.png" alt="logo"><span class="richy">Mbiamou</span></div>
+           <div class="footer-text">Powerred by <img class="favicon" src="../assets/icon_glasses.c8ec128.png" alt="logo"><span class="richy">Mbiamou</span></div>
          </div>
        </div>
      </div>

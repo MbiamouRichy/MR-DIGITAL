@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="responsive">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="52650802-f51d-4504-9ea6-bc00d1d8d021" name="Changes" comment="amelioration de toute la chatbox" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
       <workItem from="1679027800330" duration="142000" />
       <workItem from="1679180989786" duration="67000" />
       <workItem from="1683849513833" duration="18567000" />
-      <workItem from="1684000372592" duration="4722000" />
+      <workItem from="1684000372592" duration="5027000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place des elements pour lachatbox">
       <created>1669894866495</created>
@@ -183,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683868279711</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="amelioration de toute la chatbox">
+      <created>1684005271165</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684005271165</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +216,8 @@
     <MESSAGE value="mise en place du scroll vers le bas" />
     <MESSAGE value="optimisation de la chatbox" />
     <MESSAGE value="responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive" />
+    <MESSAGE value="amelioration de toute la chatbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="amelioration de toute la chatbox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

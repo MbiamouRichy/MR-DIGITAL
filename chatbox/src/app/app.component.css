@@ -4,20 +4,12 @@
   box-sizing: border-box;
   outline: none;
 }
-p{
-  font-size: 18px;
-  font-weight: 300;
-  font-family: Arial;
-
-}
 /* ================= la partie chattez avec nous ========================*/
 main{
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  font-family: "Space Grotesk", sans-serif;
 }
 .chat-bas{
   position: absolute;
@@ -25,6 +17,7 @@ main{
   right: 0px;
   margin: 20px;
   z-index: 10;
+  font-size: 16px;
 }
 .row-1, .row1-div2{
   display: flex;
@@ -101,7 +94,7 @@ main{
   bottom:  10px!important;
   right: 70px;
   width: 350px;
-  height: auto;
+  box-shadow: 0 0 5px white;
   border-radius: 20px;
   border:  2px solid rgba(0, 34, 147,0.8);
   overflow: hidden;
@@ -121,15 +114,16 @@ main{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  background-image: url("../assets/richy.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   margin-top: 1px;
-  box-shadow: rgb(0,0,0) 0px 3px 16px 0px;
   transition: all 0.6s ease-in-out;
 }
 .avatar:hover{
   transform: scale(1.1);
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .btn-top{
   display: flex;
@@ -181,9 +175,16 @@ main{
 #overflow::-webkit-scrollbar-thumb {
   background:rgb(0, 34, 147);
   border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
 #overflow::-webkit-scrollbar-track {
   background: transparent;
+}
+.block-message{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 .texte-du-chat-gris,.texte-du-chat-blue, .gris{
   border-radius: 20px;
@@ -199,52 +200,30 @@ main{
   background: rgba(205,204,213,0.6);
   border-radius: unset;
 }
-.texte-du-chat-gris{
-  max-width: 90%;
-  background: rgba(205,204,213,0.6);
-  color: black;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  align-self: start;
-}
-
 .texte-du-chat-blue{
   max-width: 90%;
   background: linear-gradient(135deg, rgb(0, 34, 147), rgb(28, 226, 255));
   color: white;
   text-align: left;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-self: end;
 }
 
-.heure, .heure1{
-  font-size: 0.7rem;
-}
-.heure1{
-  border-radius: 8px;
-  background-color:rgba(205,204,213,0.4);
-  text-align: center;
+.texte-du-chat-gris{
+  background: rgba(205,204,213,0.6);
+  max-width: 90%;
+  color: black;
+  text-align: left;
   display: flex;
-  align-self: center;
-  padding: 5px;
+  justify-content: flex-end;
+  align-self: start;
 }
-.heure{
-  position: absolute;
-  bottom: 0px;
-  right: 5px;
-}
-.input{
-  border-radius: 5px;
-  width: 100%;
-  border: none;
-  color: rgba(205,204,213,1);
-}
+
 /*================================ trait de l'input saisissez =====================*/
 .trait{
   position: absolute;
-  top: -7px;
+  top: -8px;
   left: 15px;
   width: 299px;
   height: 2px;
@@ -258,6 +237,7 @@ main{
   height: 50px;
   padding: 10px 0px 10px 0px;
   border: none;
+  font-size: 14px;
 }
 .saisissez.erreur{
   transition: all 1s ease-in-out;
@@ -275,14 +255,16 @@ main{
   }
 
 }
-.saisissez::placeholder{
-  font-size: 18px;
-}
+
 .marge{
   margin-top: 30px;
   padding: 10px 10px 20px 10px;
 }
-
+#label{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 .font{
   font-size: 20px;
   margin-left: 10px;
@@ -305,69 +287,6 @@ main{
   font-weight: bolder;
 }
 
-
-/*================================ Les petits bouttons =====================*/
-
-.dots {
-  list-style: none;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  padding: 10px 0px 0px 0px;
-  flex-direction: row;
-}
-
-.dots div {
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  margin: 0 3px;
-  background-color: #ababab;
-  --webkit-animation: bounce 1s infinite alternate;
-  --moz-animation: bounce 1s infinite alternate;
-  --o-animation: bounce 1s infinite alternate;
-  animation: bounce 0.6s infinite alternate;
-}
-
-@-webkit-keyframes bounce {
-  to {
-    opacity: .2;
-    transform: translateY(-10px);
-  }
-}
-
-@-moz-keyframes bounce {
-  to {
-    opacity: .2;
-    transform: translateY(-10px);
-  }
-}
-
-@-o-keyframes bounce {
-  to {
-    opacity: .2;
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes bounce {
-  to {
-    opacity: .2;
-    transform: translateY(-10px);
-  }
-}
-
-.dots div:nth-child(2) {
-  animation-delay: 250ms;
-}
-
-.dots div:nth-child(3) {
-  animation-delay: .5s;
-}
-.p-text{
-  font-size: 12px;
-}
-
 @media (min-width: 0px) and (max-width: 767px) {
 
   .chat-box {
@@ -387,7 +306,7 @@ main{
   .chat-bas{
     right: -10px;
   }
-  p.m-2, .text-petit, .text, .saisissez::placeholder,.texte-du-chat-gris,.texte-du-chat-blue,mat-list {
+.text-petit, .text, .saisissez::placeholder,.texte-du-chat-gris,.texte-du-chat-blue {
     font-size: 14px;
   }
   .img-courbe{
@@ -412,31 +331,14 @@ main{
 .footer-text{
   margin-left: 10px;
 }
-@media (min-width: 321px) and (max-width: 375px) {
+
+@media screen and (max-width: 767px) {
   .chat-box{
-    left: 0px;
-    animation: deplacer 0.6s forwards;
-  }
-  .footer-text{
-    margin-left: 30px;
-  }
-  @keyframes deplacer {
-    to {
-      left: 45px;
-    }
-  }
-}
-@media (min-width: 376px) and (max-width: 767px) {
-  .chat-box{
-    left: 0px;
-    animation: deplacer 0.6s forwards;
-  }
-  .footer-text{
-    margin-left: 38px;
-  }
-  @keyframes deplacer {
-    to {
-      left: 93px;
-    }
+    width: 100vw;
+    height: 100vh;
+    max-height: 600px;
+    top: 0px;
+    right: 0px;
+    animation: none;
   }
 }
